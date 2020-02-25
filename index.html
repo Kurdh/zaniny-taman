@@ -1,209 +1,201 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<meta charset="utf-8">
-<title>فۆڕمی فۆڕم</title>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.5.0/css/all.css' integrity='sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU' crossorigin='anonymous'>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
+  <title>Document</title>
 <style>
-
-@media screen and (min-width: 480px) {
-  #form {
-    width:400px;
-  }
+* {
+  box-sizing: border-box;
 }
-    @-webkit-keyframes animatebottom {
-  0% {
-opacity:0;
-    margin-top:500px;
+body {
+  font-family: Raleway, arial;
+  background: whitesmoke;
 }
-
-
-
-100% {
-opacity:1;
-    margin-top:0px;
+#container {
+  width: 330px;
+  padding: 20px 10px;
+  margin: auto;
+  margin-top: 50px
+;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
+  0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  background: white;
+  margin-bottom: 50px;
+  border-radius: 10px 20px 10px 20px;
 }
+input, select {
+  width: 80px;
+  padding: 8px;
+  outline: none;
+  border:none ;
+  border-bottom: 1px solid;
 }
-
-@keyframes animatebottom { 
-  0% {
-opacity:0;
-    margin-top:500px;
+select {
+    background: white;
 }
-
-
-
-100% {
-opacity:1;
-    margin-top:0px;
+#butt {
+  padding: 8px 12px;
+  font-size: 15px;
+  color: white;
+  background: #3b5998;
+  border: none;
+  font-weight: bold;
+  outline: none;
+  border-radius: 5px;
+  font-family: Raleway;
 }
+#butt:hover {
+    background: mediumseagreen;
 }
-        input{
-        color: #888;margin:5px;
-            border-radius: 0px;
-    border: 0px solid #eee;
-    padding: 8px;
-    background: #eee;
-    transition-duration:.5s;
-        }
-        Input:Focus{
-            border-radius:50px;
-            background-color: #ccc;
-            color:#fff;
-        }
-        a{
-    text-decoration:none!important;
-    color:#FFEB3B;
+/*Made by Noor*/
+#error {
+  font-weight: bold;
+  color: red;
 }
-        hr {
-    border: 2px solid #c1c1c1;
+span {
+  color: #3b5998;
+  font-weight: bold;
+  font-size: 18px;
 }
-        button{
-            cursor: hand;
-            border: none;
-    background: #27a5df;
-    color: white;
-    padding: 11px 26px;
-    border-radius: 5px;
-    font-size: 16px;
-    transition-duration:.1s;
-        }
-        Button:active{
-            background-color: #555;
-            
-        }
-        *{
-            outline: none;
-            user-select: none;
-        }
-        H1{
-            width:100%;
-            color: #888;
-        }
-        #form{
-        outline:15px solid #4bbaed;
-        border-radius: 10px;
-    text-align: -webkit-center;
-    background: rgba(255,255,255,1);
-    padding: 30px 10px;
-     border-top: 30px solid #27a5df;
-    border-bottom: 30px solid #27a5df;
-    box-shadow: -1px 1px 20px rgba(0, 0, 0,0.5);
-    Border:none;
-    outline:none;
-    animation:  animatebottom 1s cubic-bezier(1, -0.06, 0.26, 1.06);
-        }
-        body{
-         -webkit-user-select:none;
-   -moz-user-select: none;
-   -ms-user-select: none; 
-    user-select: none;
-    background-image:url("https://0xpl.000webhostapp.com/c.jpg");
-    background-attachment: fixed;
-    background-position: bottom left ;
-    background-repeat: no-repeat;
-    background-size: cover;
-    transition:1s;
-            padding: 10px;
-            margin:0;
-            color: #888;
-            font-family: Consolas, "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", Monaco, "Courier New", "monospace";
-            text-align: -webkit-center;
-            
-        }
-        footer{
-            padding:15px;
-            background-color:rgba(255,255,255,.3);
-            text-align:-webkit-center;
-            color:#fff!important;
-        }
-header h1{
-width:90%;
-Border: 5px dotted #27a5df;
-    color: #27a5df;
-    text-align:-webkit-center;
-    border-radius:5px;
+#result {
+  line-height: 1.5;
+  padding: 20px;
+  background: #b3ff99;
+  border-left: 6px solid #79ff4d;
+}
+#me {
+  color: grey;
+}
+input:focus {
+    border-bottom: 3px solid #3b5998;
+    outline: none;
 }
 </style>
 <script>
-/* Made By VEDANG */
-
-function  $(id){
-    return document.getElementById(id);
-}
-function ch(){
-    $("2").style.display="none";
-    $("1").style.display="inline";
-}
-
-function uc(){
-    $("1").style.display="none";
-    $("2").style.display="inline";
-}
-function login(){
-    var x = $("un").value;
-    var y = $("psw").value;
-    
-    if(x.trim()!=""&&y.trim()!=""){
-        alert("وەخێراتیۆ گوری وێب : "+x);
-        $("info").innerHTML="ئەتوو خۆت بە ژۆرێ دادا وەناوی :<br><br>Username: <b>"+x+"</b><br>Password: <b>"+y+"</b>";
-  $("ma").style.display="none";
-  $("out").style.display="inline";
-    }else {
-        alert("چییە برام ڕادەبوێری یان هاتیە گازینیۆی کا ناوەک و پاسۆردەکی بنووسە")
-    }
-}
-function logout(){
-  $("un").value="";
-  $("psw").value="";
-  $("info").innerHTML="";
-  $("out").style.display="none";
-  $("ma").style.display="inline";
+//Made by Noor alam
+alert("According to your comments, I tried to solve some issues in this programme. I hope now it'll work properly. If you still found something wrong, I'm waiting for your comments. Thanks for checking out my code ;)");
+function calculate() {
+  var bDay, bMonth, bYear, cDay, cMonth, cYear, day, month, year, inMonths, inDays, inHours, inMinutes, inSeconds, a, b;
+  //get Dob value
+  bDay = Number(document.getElementById("birth-day").value);
+  bMonth = Number(document.getElementById("birth-month").value);
+  bYear = Number(document.getElementById("birth-year").value);
+  // get Date value
+  cDay = Number(document.getElementById("current-day").value);
+  cMonth = Number(document.getElementById("current-month").value);
+  cYear = Number(document.getElementById("current-year").value);
+  //calculating year
+  if(cYear > bYear) {
+    year = cYear - bYear;
+    document.getElementById("birth-year").style.borderBottom = "1px solid"; document.getElementById("error").innerHTML = ""; document.getElementById("result").style.display="block";
+  }else if(cYear == bYear ) {
+      year = 0;
+  }
+  //calculating months
+  if(cMonth < bMonth) {
+    cMonth += 12;
+    year -= 1;
+    month = cMonth - bMonth;
+  }else {
+    month = cMonth - bMonth;
+  }
+  //calculating days
+  if(cDay < bDay) {
+    cDay += 31;
+    month -= 1;
+    day = cDay - bDay;
+  }else {
+    day = cDay - bDay;
+  }
+  //converting into 
+  inMonths = year * 12 + month;
+  a = year * 365;
+  b = month * 30;
+  //converting into days
+  inDays = a + b + day;
+  //converting into hours
+  inHours = inDays * 24;
+  //converting into minutes
+  inMinutes = inHours * 60;
+  //converting into seconds
+  inSeconds = inMinutes * 60;
+  if(bYear > cYear) {
+    document.getElementById("birth-year").style.borderBottom = "2px solid red";
+    document.getElementById("error").innerHTML = "DOB year is invalid!";
+    year = 0
+    month = 0;
+    day = 0;
+    inMonths = 0;
+    inDays = 0;
+    inHours = 0;
+    inSeconds = 0;
+    document.getElementById("result").style.display="none";
+  }
+  if(bDay == "" || bYear == "" || cDay == "") {
+    document.getElementById("error").innerHTML = "Empty values are not allowed!";
+    document.getElementById("result").style.display="none";
+  }
+ /*Made by Noor*/ document.getElementById("result").innerHTML = "<b> You are: " + year + " Years " + month + " Months " + day + " Days Old. <br>" +
+    inMonths + " Months Old. <br>" +
+    inDays + " Days Old. <br>" +
+    inHours + " Hours Old. <br>" +
+    inSeconds + " Seconds Old. </b>";
 }
 </script>
 </head>
-
 <body>
-    <header>
-        
-    </header><br><br>
-    
-    <main id="form">
-    <section style="display: inline;" id="ma">
-    <i class='far fa-user-circle' style='font-size:84px;padding: 5px; color: #27a5df'></i>
-        <h1> فۆڕمی فۆڕم </h1><hr><br>
-        
-        ناوی خۆت و مام حاجی
-        <input id="un" placeholder="ناوی خۆت و مام حاجی" type="text" /><br><br>
-        
-        تێپەڕە وشە
-        <input type="password" id="psw" placeholder="تێپەڕە وشە" /><br><br>
-        
-       <i class="far fa-check-circle" style="font-size: 20px;color: #27a5df" onclick="uc()" id="1"></i>
-           
-       <i class="far fa-circle" style="font-size: 20px;display: none;color: #27a5df" onclick="ch()" id="2"></i> تێم هەردە ژۆر و دەرکەی کلیل دە<br><br>
-        
-        <button onclick="login()">غاردانە ژۆرێ
-        <i class="fas fa-sign-in-alt"></i>
-        </button>
-    </section>
-    
-    <section id="out" style="display: none;">
-        <i class='far fa-user-circle' style='font-size:84px;padding: 5px; color: #27a5df'></i>
-        <h1> زانیاری خۆت </h1><hr>
-        <p id="info"></p><br />
-        <button onclick="logout()">قەپات کردن
-       <i class="fas fa-power-off"></i>
-        </button>
-    </section>
-    </main>
-    
-    <br><br>
-    
-    <footer>
-        دروست کرایە لەلایەن <a href="https://www.sololearn.com/Profile/6426776/?ref=app"> بەخۆم </a>
-        
-    </footer><br /><br /><br />
+  <div id="container">
+    <span>Your date of birth:  </span><br>
+    <input type="number" id="birth-day" min="1" max="31" placeholder="Day">
+    <select id="birth-month">
+      <option value="1">01 Jan</option>
+      <option value="2">02 Feb</option>
+      <option value="3">03 Mar</option>
+      <option value="4">04 Apr</option>
+      <option value="5">05 May</option>
+      <option value="6">06 Jun</option>
+      <option value="7">07 Jul</option>
+      <option value="8">08 Aug</option>
+      <option value="9">09 Sep</option>
+      <option value="10">10 Oct</option>
+      <option value="11">11 Nov</option>
+      <option value="12">12 Dec</option>
+    </select>
+    <input type="number" id="birth-year" placeholder="Year">
+    <br>
+    <br>
+    <span>Date to be calculated:  </span><br>
+    <input type="number" id="current-day" min="1" max="31" placeholder="Day">
+    <select id="current-month">
+      <option value="1">01 Jan</option>
+      <option value="2">02 Feb</option>
+      <option value="3">03 Mar</option>
+      <option value="4">04 Apr</option>
+      <option value="5">05 May</option>
+      <option value="6">06 Jun</option>
+      <option value="7">07 Jul</option>
+      <option value="8" selected>08 Aug</option>
+      <option value="9">09 Sep</option>
+      <option value="10">10 Oct</option>
+      <option value="11">11 Nov</option>
+      <option value="12">12 Dec</option>
+    </select>
+    <input type="number" id="current-year" placeholder="Year" value="2019">
+    <br>
+    <br>
+    <!--Made by Noor-->
+    <button id="butt" onclick="calculate()">Calculate <i class="fas fa-caret-right"></i></button>
+    <hr>
+    <p id="result"></p>
+    <p id="error"></p>
+    <hr>
+    <p id="me">
+      Made By: Noor Alam
+    </p>
+  </div>
 </body>
 </html>
